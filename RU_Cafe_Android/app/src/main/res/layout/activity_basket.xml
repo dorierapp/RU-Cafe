@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.project5.BasketActivity">
+
+    <ListView
+        android:id="@+id/orderItemsListView"
+        android:layout_width="wrap_content"
+        android:layout_height="519dp"
+        app:layout_constraintHeight_percent="80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtotalTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Subtotal: "
+        app:layout_constraintBottom_toTopOf="@id/salesTaxTF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalCostTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salesTaxTF" />
+
+    <TextView
+        android:id="@+id/salesTaxTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <Button
+        android:id="@+id/removeBasketItemButton"
+        android:layout_width="121dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="20dp"
+        android:text="Remove Item"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="565dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/addToOrderBasketButton"
+        android:layout_width="121dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Place Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="64dp"
+        android:layout_height="54dp"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="834dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
